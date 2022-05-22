@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -12,10 +15,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "engines": {
-    "node": "16.x"
-  },
+  "license": "ISC",  
   "bugs": {
     "url": "https://github.com/WholesomeEten/wholesome_backend/issues"
   },
