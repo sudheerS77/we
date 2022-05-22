@@ -1,0 +1,35 @@
+{
+  "name": "wholesome_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WholesomeEten/wholesome_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WholesomeEten/wholesome_backend/issues"
+  },
+  "homepage": "https://github.com/WholesomeEten/wholesome_backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.2",
+    "mongoose-unique-validation": "^0.1.0",
+    "mongoose-unique-validator": "^3.0.0",
+    "msg91": "^0.0.6",
+    "nodemon": "^2.0.16",
+    "otp-generator": "^4.0.0"
+  }
+}

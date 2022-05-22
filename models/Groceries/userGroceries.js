@@ -1,0 +1,51 @@
+const mongoose=require("mongoose");
+
+const userGrocerySchema=new mongoose.Schema({
+    userId:{
+        type:mongoose.SchemaTypes.ObjectId,
+        ref:"User"
+    },
+    groceryId:{
+        type:mongoose.SchemaTypes.ObjectId,
+        ref:"GroceryFood",
+    },
+    foodId:{
+        type:mongoose.SchemaTypes.ObjectId,
+        ref:"Food",
+    },
+    measuringStandard:{
+        type:String 
+    },
+    totalQuantity:{
+        type:Number
+    },
+    totalQuantityUnits:{
+        type:Number
+    },
+    totalWeight:{
+        type:Number
+    },
+    energy:{
+        type:String
+    },
+    recommendedCalories:{
+        type:Number
+    },
+    recommendedPhysicalActivity:{
+        type:String
+    },
+    allergies:{
+        type:String
+    },
+    recommendedDietaryPreferences:{
+        type:String
+    },
+    createdBy:{
+        type:String
+    },
+    updatedBy:{
+        type:String
+    }
+},{timestamps:{createdAt:"createdDateTime",updatedAt:"updatedDateTime"}});
+
+module.exports=mongoose.model("UserGrocery",userGrocerySchema);
