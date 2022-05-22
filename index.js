@@ -20,7 +20,7 @@ app.use(cors());
 
 //Application Routes
 app.use("/auth", Auth);
-app.use("/users", users);
+//app.use("/users", users);
 
 
 app.get("/", (req, res) => {
